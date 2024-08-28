@@ -1,0 +1,79 @@
+body {
+    background-color: #121212; /* Darker black for depth */
+    color: #fff; /* White text */
+    font-family: 'Montserrat', sans-serif; /* Sleek and modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.container {
+    background: linear-gradient(135deg, #FF4500, #FF6347, #FF8C00); /* Fiery gradient */
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(255, 69, 0, 0.8); /* Fiery shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #303030; /* Dark background for input */
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #FF4500; /* Fiery focus */
+    background-color: #424242; /* Slightly lighter on focus */
+}
+
+button {
+    background-color: #FF4500; /* Fiery orange */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform */
+}
+
+button:hover {
+    background-color: #FF6347; /* Lighter orange on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Optional animation for the container */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+.container {
+    animation: flicker 1.5s infinite alternate; /* Flickering effect */
+}
